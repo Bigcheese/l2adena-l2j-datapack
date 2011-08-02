@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list applyTaxes="true" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" ns0:noNamespaceSchemaLocation="multisell.xsd">
+	<item id="1">
+		<!-- Adena -->
+		<ingredient count="87600" id="57" />
+		<!-- Adena -->
+		<ingredient count="87600" id="57" isTaxIngredient="true" />
+		<!-- Shadow Item: Katana -->
+		<production count="1" id="8830" />
+	</item>
+	<item id="2">
+		<!-- Adena -->
+		<ingredient count="87600" id="57" />
+		<!-- Adena -->
+		<ingredient count="87600" id="57" isTaxIngredient="true" />
+		<!-- Shadow Item: Bec de Corbin -->
+		<production count="1" id="8831" />
+	</item>
+	<item id="3">
+		<!-- Adena -->
+		<ingredient count="87600" id="57" />
+		<!-- Adena -->
+		<ingredient count="87600" id="57" isTaxIngredient="true" />
+		<!-- Shadow Item: Cursed Staff -->
+		<production count="1" id="8832" />
+	</item>
+	<item id="4">
+		<!-- Adena -->
+		<ingredient count="87600" id="57" />
+		<!-- Adena -->
+		<ingredient count="87600" id="57" isTaxIngredient="true" />
+		<!-- Shadow Item: Stiletto -->
+		<production count="1" id="8833" />
+	</item>
+	<item id="5">
+		<!-- Adena -->
+		<ingredient count="87600" id="57" />
+		<!-- Adena -->
+		<ingredient count="87600" id="57" isTaxIngredient="true" />
+		<!-- Shadow Item: Soulfire Dirk -->
+		<production count="1" id="8834" />
+	</item>
+	<item id="6">
+		<!-- Adena -->
+		<ingredient count="87600" id="57" />
+		<!-- Adena -->
+		<ingredient count="87600" id="57" isTaxIngredient="true" />
+		<!-- Shadow Item: Elemental Bow -->
+		<production count="1" id="8835" />
+	</item>
+	<item id="7">
+		<!-- Adena -->
+		<ingredient count="87600" id="57" />
+		<!-- Adena -->
+		<ingredient count="87600" id="57" isTaxIngredient="true" />
+		<!-- Shadow Item: Dwarven War Hammer -->
+		<production count="1" id="8836" />
+	</item>
+	<item id="8">
+		<!-- Adena -->
+		<ingredient count="87600" id="57" />
+		<!-- Adena -->
+		<ingredient count="87600" id="57" isTaxIngredient="true" />
+		<!-- Shadow Item: Sword of Revolution -->
+		<production count="1" id="8837" />
+	</item>
+	<item id="9">
+		<!-- Adena -->
+		<ingredient count="87600" id="57" />
+		<!-- Adena -->
+		<ingredient count="87600" id="57" isTaxIngredient="true" />
+		<!-- Shadow Item: Knuckle Duster -->
+		<production count="1" id="8838" />
+	</item>
+</list>
