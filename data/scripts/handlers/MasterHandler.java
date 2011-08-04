@@ -112,6 +112,7 @@ import handlers.bypasshandlers.Festival;
 import handlers.bypasshandlers.FortSiege;
 import handlers.bypasshandlers.Freight;
 import handlers.bypasshandlers.ItemAuctionLink;
+import handlers.bypasshandlers.LearnAllSkills;
 import handlers.bypasshandlers.Link;
 import handlers.bypasshandlers.Loto;
 import handlers.bypasshandlers.ManorManager;
@@ -394,6 +395,7 @@ public class MasterHandler
 		BYPASS.registerBypassHandler(new FortSiege());
 		BYPASS.registerBypassHandler(new Freight());
 		BYPASS.registerBypassHandler(new ItemAuctionLink());
+		BYPASS.registerBypassHandler(new LearnAllSkills());
 		BYPASS.registerBypassHandler(new Link());
 		BYPASS.registerBypassHandler(new Loto());
 		BYPASS.registerBypassHandler(new ManorManager());
