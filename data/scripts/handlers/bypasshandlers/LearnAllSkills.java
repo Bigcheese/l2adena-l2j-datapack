@@ -16,6 +16,7 @@ package handlers.bypasshandlers;
 
 import com.l2jserver.gameserver.handler.IBypassHandler;
 import com.l2jserver.gameserver.model.actor.L2Character;
+import com.l2jserver.gameserver.model.actor.L2Npc;
 import com.l2jserver.gameserver.model.actor.instance.L2NpcInstance;
 import com.l2jserver.gameserver.model.actor.instance.L2PcInstance;
 
@@ -30,6 +31,13 @@ public class LearnAllSkills implements IBypassHandler
 	{
 		if (!(target instanceof L2NpcInstance))
 			return false;
+		
+		L2Npc npc = (L2Npc) target;
+		if (!npc.getTemplate().canTeach(activeChar.getClassId()))
+		{
+			npc.showNoTeachHtml(activeChar);
+			return true;
+		}
 
 		activeChar.giveAvailableSkills(false, true, true);
 		activeChar.sendSkillList();
