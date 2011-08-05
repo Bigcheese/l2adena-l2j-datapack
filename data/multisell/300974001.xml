@@ -6,6 +6,12 @@
 		<!-- Great Sword -->
 		<production count="1" id="78" />
 	</item>
+  <item id="2">
+    <!-- Adena -->
+    <ingredient count="6680500" id="57" />
+    <!-- Great Sword -->
+    <production count="1" id="78" />
+  </item>
 	<item id="2">
 		<!-- Adena -->
 		<ingredient count="6680500" id="57" />
@@ -90,85 +96,133 @@
 		<!-- Products -->
 		<production count="1" id="9312" />
 	</item>
-	<item id="16">
+  <item id="16">
+    <!-- Adena -->
+    <ingredient count="10091400" id="57" />
+    <!-- Products -->
+    <production count="1" id="79" />
+  </item>
+  <item id="17">
+    <!-- Adena -->
+    <ingredient count="10091400" id="57" />
+    <!-- Products -->
+    <production count="1" id="97" />
+  </item>
+  <item id="18">
+    <!-- Adena -->
+    <ingredient count="10091400" id="57" />
+    <!-- Products -->
+    <production count="1" id="171" />
+  </item>
+  <item id="19">
+    <!-- Adena -->
+    <ingredient count="10091400" id="57" />
+    <!-- Products -->
+    <production count="1" id="175" />
+  </item>
+  <item id="20">
+    <!-- Adena -->
+    <ingredient count="10091400" id="57" />
+    <!-- Products -->
+    <production count="1" id="210" />
+  </item>
+  <item id="21">
+    <!-- Adena -->
+    <ingredient count="10091400" id="57" />
+    <!-- Products -->
+    <production count="1" id="234" />
+  </item>
+  <item id="22">
+    <!-- Adena -->
+    <ingredient count="10091400" id="57" />
+    <!-- Products -->
+    <production count="1" id="268" />
+  </item>
+  <item id="23">
+    <!-- Adena -->
+    <ingredient count="10091400" id="57" />
+    <!-- Products -->
+    <production count="1" id="287" />
+  </item>
+	<item id="24">
 		<!-- Adena -->
 		<ingredient count="20741000" id="57" />
 		<!-- Peacemaker -->
 		<production count="1" id="236" />
 	</item>
-	<item id="17">
+	<item id="25">
 		<!-- Adena -->
 		<ingredient count="20741000" id="57" />
 		<!-- Sword of Miracles -->
 		<production count="1" id="151" />
 	</item>
-	<item id="18">
+	<item id="26">
 		<!-- Adena -->
 		<ingredient count="20741000" id="57" />
 		<!-- Products -->
 		<production count="1" id="2500" />
 	</item>
-	<item id="19">
+	<item id="27">
 		<!-- Adena -->
 		<ingredient count="20741000" id="57" />
 		<!-- Dark Legion's Edge -->
 		<production count="1" id="9340" />
 	</item>
-	<item id="20">
+	<item id="28">
 		<!-- Adena -->
 		<ingredient count="20741000" id="57" />
 		<!-- Dragon Slayer -->
 		<production count="1" id="81" />
 	</item>
-	<item id="21">
+	<item id="29">
 		<!-- Adena -->
 		<ingredient count="20741000" id="57" />
 		<!-- Doom Crusher -->
 		<production count="1" id="7902" />
 	</item>
-	<item id="22">
+	<item id="30">
 		<!-- Adena -->
 		<ingredient count="20741000" id="57" />
 		<!-- Undertaker -->
 		<production count="1" id="9344" />
 	</item>
-	<item id="23">
+	<item id="31">
 		<!-- Adena -->
 		<ingredient count="20741000" id="57" />
 		<!-- Soul Bow -->
 		<production count="1" id="289" />
 	</item>
-	<item id="24">
+	<item id="32">
 		<!-- Adena -->
 		<ingredient count="20741000" id="57" />
 		<!-- Reaper -->
 		<production count="1" id="9348" />
 	</item>
-	<item id="25">
+	<item id="33">
 		<!-- Adena -->
 		<ingredient count="20741000" id="57" />
 		<!-- Flaming Dragon Skull -->
 		<production count="1" id="7895" />
 	</item>
-	<item id="26">
+	<item id="34">
 		<!-- Adena -->
 		<ingredient count="20741000" id="57" />
 		<!-- Elysian -->
 		<production count="1" id="164" />
 	</item>
-	<item id="27">
+	<item id="35">
 		<!-- Adena -->
 		<ingredient count="20741000" id="57" />
 		<!-- Branch of the Mother Tree -->
 		<production count="1" id="213" />
 	</item>
-	<item id="28">
+	<item id="36">
 		<!-- Adena -->
 		<ingredient count="20741000" id="57" />
 		<!-- Tallum Glaive -->
 		<production count="1" id="305" />
 	</item>
-	<item id="29">
+	<item id="37">
 		<!-- Adena -->
 		<ingredient count="20741000" id="57" />
 		<!-- Dragon Grinder -->
