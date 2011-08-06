@@ -274,10 +274,9 @@ public class Frintezza extends L2AttackableAIScript
 		int[] mob = {SCARLET1, SCARLET2, FRINTEZZA, 18328, 18329, 18330, 18331, 18332, 18333, 18334, 18335, 18336, 18337, 18338, 18339, 29048, 29049, 29050, 29051};
 		_Zone = GrandBossManager.getInstance().getZone(getXFix(174232), getYFix(-88020), getZFix(-5116));
 		registerMobs(mob);
-		addStartNpc(GUIDE);
-		addTalkId(GUIDE);
-		addStartNpc(CUBE);
-		addTalkId(CUBE);
+		addStartNpc(GUIDE, CUBE);
+		addTalkId(GUIDE, CUBE);
+		
 		StatsSet info = GrandBossManager.getInstance().getStatsSet(FRINTEZZA);
 		int status = GrandBossManager.getInstance().getBossStatus(FRINTEZZA);
 		if (status == DEAD)
@@ -561,7 +560,7 @@ public class Frintezza extends L2AttackableAIScript
 			_Zone.broadcastPacket(new SocialAction(demon1,1));
 			_Zone.broadcastPacket(new SocialAction(demon4,1));
 			
-			for (L2Character pc : _Zone.getCharactersInside().values())
+			for (L2Character pc : _Zone.getCharactersInsideArray())
 			{
 				if (pc instanceof L2PcInstance)
 				{
@@ -575,7 +574,7 @@ public class Frintezza extends L2AttackableAIScript
 		}
 		else if (event.equalsIgnoreCase("camera_9c"))
 		{
-			for (L2Character pc : _Zone.getCharactersInside().values())
+			for (L2Character pc : _Zone.getCharactersInsideArray())
 			{
 				if (pc instanceof L2PcInstance)
 				{
@@ -731,7 +730,7 @@ public class Frintezza extends L2AttackableAIScript
 		}
 		else if (event.equalsIgnoreCase("stop_pc"))
 		{
-			for (L2Character cha : _Zone.getCharactersInside().values())
+			for (L2Character cha : _Zone.getCharactersInsideArray())
 			{
 				cha.abortAttack();
 				cha.abortCast();
@@ -752,7 +751,7 @@ public class Frintezza extends L2AttackableAIScript
 		}
 		else if (event.equalsIgnoreCase("start_pc"))
 		{
-			for (L2Character cha : _Zone.getCharactersInside().values())
+			for (L2Character cha : _Zone.getCharactersInsideArray())
 			{
 				if (cha != frintezza)
 				{
@@ -972,7 +971,7 @@ public class Frintezza extends L2AttackableAIScript
 			}
 			else if (_OnSong == 4)
 			{
-				for (L2Character cha : _Zone.getCharactersInside().values())
+				for (L2Character cha : _Zone.getCharactersInsideArray())
 				{
 					if (cha instanceof L2PcInstance && Rnd.get(100) < 80)
 					{
@@ -983,7 +982,7 @@ public class Frintezza extends L2AttackableAIScript
 			}
 			else if (_OnSong == 5)
 			{
-				for (L2Character cha : _Zone.getCharactersInside().values())
+				for (L2Character cha : _Zone.getCharactersInsideArray())
 				{
 					if (cha instanceof L2PcInstance && Rnd.get(100) < 70)
 					{
@@ -1004,7 +1003,7 @@ public class Frintezza extends L2AttackableAIScript
 		}
 		else if (event.equalsIgnoreCase("stop_effect"))
 		{
-			for (L2Character cha : _Zone.getCharactersInside().values())
+			for (L2Character cha : _Zone.getCharactersInsideArray())
 			{
 				if (cha instanceof L2PcInstance)
 				{
@@ -1127,7 +1126,7 @@ public class Frintezza extends L2AttackableAIScript
 			}
 			else
 			{
-				for (L2Character cha : _Zone.getCharactersInside().values())
+				for (L2Character cha : _Zone.getCharactersInsideArray())
 				{
 					if (cha instanceof L2PcInstance)
 					{

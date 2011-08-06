@@ -16,7 +16,6 @@ package ai.individual;
 
 import gnu.trove.TIntObjectHashMap;
 
-import java.util.Collection;
 import java.util.List;
 import java.util.concurrent.ScheduledFuture;
 
@@ -386,7 +385,7 @@ public class Antharas extends L2AttackableAIScript
 	private class AntharasSpawn implements Runnable
 	{
 		private int _taskId = 0;
-		private final Collection<L2Character> _players = _Zone.getCharactersInside().values();
+		private final L2Character[] _players = _Zone.getCharactersInsideArray();
 		
 		public AntharasSpawn(int taskId)
 		{
@@ -408,9 +407,9 @@ public class Antharas extends L2AttackableAIScript
 					_monsterSpawnTask = null;
 					if (FWA_OLDANTHARAS)
 						npcId = 29019; // old
-					else if (_players.size() <= FWA_LIMITOFWEAK)
+					else if (_players.length <= FWA_LIMITOFWEAK)
 						npcId = 29066; // weak
-					else if (_players.size() > FWA_LIMITOFNORMAL)
+					else if (_players.length > FWA_LIMITOFNORMAL)
 						npcId = 29068; // strong
 					else
 						npcId = 29067; // normal
@@ -528,7 +527,7 @@ public class Antharas extends L2AttackableAIScript
 	{
 		if (_Zone != null)
 		{
-			for (L2Character characters : _Zone.getCharactersInside().values())
+			for (L2Character characters : _Zone.getCharactersInsideArray())
 			{
 				if (characters instanceof L2PcInstance)
 					characters.sendPacket(mov);
@@ -803,7 +802,7 @@ public class Antharas extends L2AttackableAIScript
 		{
 			GrandBossManager.getInstance().setBossStatus(_bossId,DORMANT);
 			if (FWA_DOSERVEREARTHQUAKE)
-				for(L2PcInstance p : L2World.getInstance().getAllPlayers().values())
+				for(L2PcInstance p : L2World.getInstance().getAllPlayersArray())
 					p.broadcastPacket(new Earthquake(185708,114298,-8221,20,10));
 		}
 	}
