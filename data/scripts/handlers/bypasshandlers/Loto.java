@@ -177,6 +177,7 @@ public class Loto implements IBypassHandler
 			}
 			
 			long price = Config.ALT_LOTTERY_TICKET_PRICE;
+			price *= Config.RATE_COST_EVERYTHING;
 			int lotonumber = Lottery.getInstance().getId();
 			int enchant = 0;
 			int type2 = 0;

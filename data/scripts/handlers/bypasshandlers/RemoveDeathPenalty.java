@@ -14,6 +14,7 @@
  */
 package handlers.bypasshandlers;
 
+import com.l2jserver.Config;
 import com.l2jserver.gameserver.handler.IBypassHandler;
 import com.l2jserver.gameserver.model.actor.L2Character;
 import com.l2jserver.gameserver.model.actor.L2Npc;
@@ -52,7 +53,7 @@ public class RemoveDeathPenalty implements IBypassHandler
 					NpcHtmlMessage html = new NpcHtmlMessage(npc.getObjectId());
 					html.setFile(activeChar.getHtmlPrefix(), filename);
 					html.replace("%objectId%", String.valueOf(npc.getObjectId()));
-					html.replace("%dp_price%", String.valueOf(pen_clear_price[activeChar.getExpertiseLevel()]));
+					html.replace("%dp_price%", String.valueOf((long)(pen_clear_price[activeChar.getExpertiseLevel()] * Config.RATE_COST_EVERYTHING)));
 					activeChar.sendPacket(html);
 					break;
 				case 2:
@@ -65,7 +66,7 @@ public class RemoveDeathPenalty implements IBypassHandler
 					{
 						if (activeChar.getAdena() >= pen_clear_price[activeChar.getExpertiseLevel()])
 						{
-							if (!activeChar.reduceAdena("DeathPenality", pen_clear_price[activeChar.getExpertiseLevel()], npc, true))
+							if (!activeChar.reduceAdena("DeathPenality", (long)(pen_clear_price[activeChar.getExpertiseLevel()] * Config.RATE_COST_EVERYTHING), npc, true))
 								return false;
 							activeChar.setDeathPenaltyBuffLevel(activeChar.getDeathPenaltyBuffLevel() - 1);
 							activeChar.sendPacket(SystemMessage.getSystemMessage(SystemMessageId.DEATH_PENALTY_LIFTED));

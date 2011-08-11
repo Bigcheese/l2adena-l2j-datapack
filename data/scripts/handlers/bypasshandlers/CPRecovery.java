@@ -14,6 +14,7 @@
  */
 package handlers.bypasshandlers;
 
+import com.l2jserver.Config;
 import com.l2jserver.gameserver.datatables.SkillTable;
 import com.l2jserver.gameserver.handler.IBypassHandler;
 import com.l2jserver.gameserver.model.L2Skill;
@@ -46,7 +47,7 @@ public class CPRecovery implements IBypassHandler
 			return true;
 		}
 		
-		if (!activeChar.reduceAdena("RestoreCP", 100, activeChar.getLastFolkNPC(), true))
+		if (!activeChar.reduceAdena("RestoreCP", (long)(100 * Config.RATE_COST_EVERYTHING), activeChar.getLastFolkNPC(), true))
 			return false;
 		
 		L2Skill skill = SkillTable.getInstance().getInfo(4380, 1);

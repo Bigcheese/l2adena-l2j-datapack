@@ -16,6 +16,7 @@ package handlers.bypasshandlers;
 
 import java.util.StringTokenizer;
 
+import com.l2jserver.Config;
 import com.l2jserver.gameserver.handler.IBypassHandler;
 import com.l2jserver.gameserver.instancemanager.SiegeManager;
 import com.l2jserver.gameserver.model.actor.L2Character;
@@ -81,6 +82,7 @@ public class Observation implements IBypassHandler
 	{
 		StringTokenizer st = new StringTokenizer(val);
 		long cost = Long.parseLong(st.nextToken());
+		cost *= Config.RATE_COST_EVERYTHING;
 		int x = Integer.parseInt(st.nextToken());
 		int y = Integer.parseInt(st.nextToken());
 		int z = Integer.parseInt(st.nextToken());

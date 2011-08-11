@@ -101,6 +101,7 @@ public class RentPet implements IBypassHandler
 			return;
 		
 		price *= cost[val - 1];
+		price *= Config.RATE_COST_EVERYTHING;
 		int time = ridetime[val - 1];
 		
 		if (!player.reduceAdena("Rent", (long) price, player.getLastFolkNPC(), true))
