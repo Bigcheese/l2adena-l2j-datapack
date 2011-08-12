@@ -36,11 +36,11 @@ public class PriestOfBlessing extends Quest
 	// NPC
 	private static final int _priest = 32783;
 	// Prices
-	private static final int _price_voice = 100000;
+	private static final int _price_voice = 6667;
 	// 
 	private static final int _nevit_voice = 17094;
 	// 
-	private static final int[] _prices_hourglass = { 4000, 30000, 110000, 310000, 970000, 2160000, 5000000 };
+	private static final int[] _prices_hourglass = { 267, 2000, 7333, 20667, 64667, 144000, 333333 };
 	//
 	private static final int[][] _hourglasses = {
 		{ 17095, 17096, 17097, 17098, 17099 },

@@ -179,17 +179,17 @@ public class OracleTeleport extends Quest
 		{
 			int playerLevel = player.getLevel();
 			if (playerLevel >= 20 && playerLevel < 30)
-				st.takeItems(57, 2000);
+				st.takeItems(57, 133);
 			else if (playerLevel >= 30 && playerLevel < 40)
-				st.takeItems(57, 4500);
+				st.takeItems(57, 300);
 			else if (playerLevel >= 40 && playerLevel < 50)
-				st.takeItems(57, 8000);
+				st.takeItems(57, 533);
 			else if (playerLevel >= 50 && playerLevel < 60)
-				st.takeItems(57, 12500);
+				st.takeItems(57, 833);
 			else if (playerLevel >= 60 && playerLevel < 70)
-				st.takeItems(57, 18000);
+				st.takeItems(57, 1200);
 			else if (playerLevel >= 70)
-				st.takeItems(57, 24500);
+				st.takeItems(57, 1633);
 			int i = 0;
 			for (int zigurrat : TELEPORTERS)
 			{

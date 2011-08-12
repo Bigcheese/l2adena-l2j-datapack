@@ -186,7 +186,7 @@ class Quest (JQuest) :
           st.playSound("ItemSound.quest_middle")
     elif event == "32047-38.htm" :
        st.giveItems(Starstone2,1)
-       st.takeItems(57,3000)
+       st.takeItems(57,200)
        st.set("cond","26")
        st.playSound("ItemSound.quest_middle")
     elif event == "32050-02.htm" :

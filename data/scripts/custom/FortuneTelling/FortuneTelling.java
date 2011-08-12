@@ -28,7 +28,7 @@ public class FortuneTelling extends Quest
 	private static final String qn = "FortuneTelling";
 
 	private static final int ADENA = 57;
-	private static final int COST = 1000;
+	private static final int COST = 67;
 
 	private static final int NPC = 32616;
 

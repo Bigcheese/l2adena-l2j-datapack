@@ -48,7 +48,7 @@ public class PurchaseBracelet extends Quest
 		if (st == null)
 			return htmltext;
 
-		if (st.getQuestItemsCount(6471) >= 20 && st.getQuestItemsCount(GREAT_CODRAN) >= 50 && st.getQuestItemsCount(MEMENTO_MORI) >= 4 && st.getQuestItemsCount(EARTH_EGG) >= 5 && st.getQuestItemsCount(NONLIVING_NUCLEUS) >= 5 && st.getQuestItemsCount(DRAGON_HEART) >= 3 && st.getQuestItemsCount(ADENA) >= 7500000)
+		if (st.getQuestItemsCount(6471) >= 20 && st.getQuestItemsCount(GREAT_CODRAN) >= 50 && st.getQuestItemsCount(MEMENTO_MORI) >= 4 && st.getQuestItemsCount(EARTH_EGG) >= 5 && st.getQuestItemsCount(NONLIVING_NUCLEUS) >= 5 && st.getQuestItemsCount(DRAGON_HEART) >= 3 && st.getQuestItemsCount(ADENA) >= 500000)
 		{
 			st.takeItems(BIG_RED_NIBLE_FISH, 25);
 			st.takeItems(GREAT_CODRAN, 50);
@@ -56,7 +56,7 @@ public class PurchaseBracelet extends Quest
 			st.takeItems(EARTH_EGG, 5);
 			st.takeItems(NONLIVING_NUCLEUS, 5);
 			st.takeItems(DRAGON_HEART, 3);
-			st.takeItems(ADENA, 7500000);
+			st.takeItems(ADENA, 500000);
 			htmltext = "";
 			if (event.equals("Little_Devil"))
 				st.giveItems(DEVIL_BRACELET, 1);

@@ -38,7 +38,7 @@ public class EchoCrystals extends Quest
 	};
 
 	private static final int ADENA = 57;
-	private static final int COST = 200;
+	private static final int COST = 14;
 
 	private static final Map<Integer, ScoreData> SCORES = new FastMap<Integer, ScoreData>();
 

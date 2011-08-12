@@ -28,7 +28,7 @@ public class PinsAndPouchUnseal extends Quest
 		32610,32612
 	};
 	
-	private final static int[] UNSEALPRICE = {3200,11800,26500,136600};
+	private final static int[] UNSEALPRICE = {213,787,1767,9107};
 	// failed, low, mid, high, top
 	private final static int[] CHANCES = {49,78,95,99,100};
 	

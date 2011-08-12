@@ -14,6 +14,7 @@
  */
 package teleports.ToIVortex;
 
+import com.l2jserver.Config;
 import com.l2jserver.gameserver.model.actor.L2Npc;
 import com.l2jserver.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jserver.gameserver.model.quest.Quest;
@@ -199,9 +200,9 @@ public class ToIVortex extends Quest
 		}
 		else if (event.equalsIgnoreCase("GREEN"))
 		{
-			if (st.getQuestItemsCount(ADENA) >= 10000)
+			if (st.getQuestItemsCount(ADENA) >= (long)(10000 * Config.RATE_COST_EVERYTHING))
 			{
-				st.takeItems(ADENA, 10000);
+				st.takeItems(ADENA, (long)(10000 * Config.RATE_COST_EVERYTHING));
 				st.giveItems(GREEN_DIMENSION_STONE, 1);
 				st.exitQuest(true);
 			}
@@ -213,9 +214,9 @@ public class ToIVortex extends Quest
 		}
 		else if (event.equalsIgnoreCase("BLUE"))
 		{
-			if (st.getQuestItemsCount(ADENA) >= 10000)
+			if (st.getQuestItemsCount(ADENA) >= (long)(10000 * Config.RATE_COST_EVERYTHING))
 			{
-				st.takeItems(ADENA, 10000);
+				st.takeItems(ADENA, (long)(10000 * Config.RATE_COST_EVERYTHING));
 				st.giveItems(BLUE_DIMENSION_STONE, 1);
 				st.exitQuest(true);
 			}
@@ -227,9 +228,9 @@ public class ToIVortex extends Quest
 		}
 		else if (event.equalsIgnoreCase("RED"))
 		{
-			if (st.getQuestItemsCount(ADENA) >= 10000)
+			if (st.getQuestItemsCount(ADENA) >= (long)(10000 * Config.RATE_COST_EVERYTHING))
 			{
-				st.takeItems(ADENA, 10000);
+				st.takeItems(ADENA, (long)(10000 * Config.RATE_COST_EVERYTHING));
 				st.giveItems(RED_DIMENSION_STONE, 1);
 				st.exitQuest(true);
 			}
