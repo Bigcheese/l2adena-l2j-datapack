@@ -166,9 +166,9 @@ class Quest (JQuest) :
        else :
            htmltext = "30758-04.htm"
    elif event == "30758-07.htm" :
-       if st.getQuestItemsCount(57) >= int(10000 * Config.RATE_COST_EVERYTHING) and not self.athrea :
+       if st.getQuestItemsCount(57) >= 667 and not self.athrea :
            htmltext = "30758-08.htm"
-           st.takeItems(57, int(10000 * Config.RATE_COST_EVERYTHING))
+           st.takeItems(57, 667)
    if DEBUG and debug :
        print debug
        return debug

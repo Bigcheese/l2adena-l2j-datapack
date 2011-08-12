@@ -111,8 +111,8 @@ class Quest (JQuest) :
       st.set("cond","6")
       st.playSound("ItemSound.quest_middle")
     elif event == "30081-08.htm" :
-      if st.getQuestItemsCount(57) >= int(3000000 * Config.RATE_COST_EVERYTHING):
-         st.takeItems(57,int(3000000 * Config.RATE_COST_EVERYTHING))
+      if st.getQuestItemsCount(57) >= 200000:
+         st.takeItems(57,200000)
          st.giveItems(10868,1)
          st.set("cond","7")
          st.playSound("ItemSound.quest_middle")
