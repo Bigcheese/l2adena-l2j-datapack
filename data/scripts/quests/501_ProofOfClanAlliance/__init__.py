@@ -9,6 +9,7 @@ from com.l2jserver.gameserver.network.serverpackets      	import MagicSkillUse
 from com.l2jserver.gameserver.model.quest        			import State
 from com.l2jserver.gameserver.model.quest        			import QuestState
 from com.l2jserver.gameserver.model.quest.jython 			import QuestJython as JQuest
+from com.l2jserver                                          import Config
 
 qn="501_ProofOfClanAlliance"
 
@@ -165,9 +166,9 @@ class Quest (JQuest) :
        else :
            htmltext = "30758-04.htm"
    elif event == "30758-07.htm" :
-       if st.getQuestItemsCount(57) >= 10000 and not self.athrea :
+       if st.getQuestItemsCount(57) >= int(10000 * Config.RATE_COST_EVERYTHING) and not self.athrea :
            htmltext = "30758-08.htm"
-           st.takeItems(57,10000)
+           st.takeItems(57, int(10000 * Config.RATE_COST_EVERYTHING))
    if DEBUG and debug :
        print debug
        return debug

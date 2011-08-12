@@ -8,6 +8,7 @@ from com.l2jserver.gameserver.model.quest import State
 from com.l2jserver.gameserver.model.quest import QuestState
 from com.l2jserver.gameserver.model.quest.jython import QuestJython as JQuest
 from com.l2jserver.gameserver.network.serverpackets import NpcSay
+from com.l2jserver                                  import Config
 
 qn = "60_GoodWorkReward"
 
@@ -110,8 +111,8 @@ class Quest (JQuest) :
       st.set("cond","6")
       st.playSound("ItemSound.quest_middle")
     elif event == "30081-08.htm" :
-      if st.getQuestItemsCount(57) >= 3000000 :
-         st.takeItems(57,3000000)
+      if st.getQuestItemsCount(57) >= int(3000000 * Config.RATE_COST_EVERYTHING):
+         st.takeItems(57,int(3000000 * Config.RATE_COST_EVERYTHING))
          st.giveItems(10868,1)
          st.set("cond","7")
          st.playSound("ItemSound.quest_middle")
