@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `characters` (
   `char_slot` TINYINT UNSIGNED DEFAULT NULL,
   `newbie` MEDIUMINT UNSIGNED DEFAULT 1,
   `lastAccess` bigint(13) unsigned NOT NULL DEFAULT '0',
-  `clan_privs` MEDIUMINT UNSIGNED DEFAULT 0,
+  `clan_privs` INT UNSIGNED DEFAULT 0,
   `wantspeace` TINYINT UNSIGNED DEFAULT 0,
   `isin7sdungeon` TINYINT UNSIGNED NOT NULL default 0,
   `punish_level` TINYINT UNSIGNED NOT NULL DEFAULT 0,

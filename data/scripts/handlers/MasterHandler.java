@@ -105,6 +105,7 @@ import handlers.bypasshandlers.Buy;
 import handlers.bypasshandlers.BuyShadowItem;
 import handlers.bypasshandlers.CPRecovery;
 import handlers.bypasshandlers.ChatLink;
+import handlers.bypasshandlers.ClanPermissions;
 import handlers.bypasshandlers.ClanWarehouse;
 import handlers.bypasshandlers.DrawHenna;
 import handlers.bypasshandlers.EventEngine;
@@ -387,6 +388,7 @@ public class MasterHandler
 		BYPASS.registerBypassHandler(new Buy());
 		BYPASS.registerBypassHandler(new BuyShadowItem());
 		BYPASS.registerBypassHandler(new ChatLink());
+		BYPASS.registerBypassHandler(new ClanPermissions());
 		BYPASS.registerBypassHandler(new ClanWarehouse());
 		BYPASS.registerBypassHandler(new CPRecovery());
 		BYPASS.registerBypassHandler(new DrawHenna());
